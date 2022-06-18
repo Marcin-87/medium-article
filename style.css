@@ -1,96 +1,72 @@
-
 body {
-  color: #695858;
-  font-size: 22px;
-  line-height: 1;
-  font-weight: 500;
-  font-family: 'Inconsolata', serif;
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  padding-bottom: 200px;
   margin: 0;
+  background: #F4F4F4;
 }
 
-h1, h2 {
-  font-family: 'Droid Sans', sans-serif;
-  font-weight: bold;
-}
-
-h2 {
-  color: #6d5151;
-  font-weight: normal;
+h1, h2, h3 {
+  font-family: "Poppins", "sans-serif";
 }
 
 a {
   text-decoration: none;
-  color: #5a6fdb;
-}
-
-.container {
-  width: 700px;
-  margin: 50px auto;
-}
-
-.banner {
-  background-image: url("https://images.unsplash.com/photo-1652641115151-68d20aa51d1c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1NTM5ODIwMw&ixlib=rb-1.2.1&q=80&w=1000");
-  background-size: cover;
-  color: white;
-  padding: 100px 0;
-}
-
-.banner h1 {
-  font-size: 42px;
-}
-
-.banner p {
-  font-size: 36px;
-  opacity: 70%;
-  font-style: italic;
-  font-weight: lighter;
-}
-
-a {
-  padding: 2px 20px;
-  border-radius: 25px 0;
-  background-image: linear-gradient(45deg, beige,bisque);
-  color: black;
-  font-weight: bolder;
-  font-style: italic;
-  font-size: 28px;
 }
 
 a:hover {
-  background-image: linear-gradient(-45deg,  beige,bisque);
-  color: rgb(54, 54, 54);
+  text-decoration: none;
 }
 
-@media(max-width: 980px) {
-  .container {
-    width: 720px;
-  }
+
+/* Cards */
+.card-container {
+  background-color: white;
+  border: 1px solid rgb(240, 240, 240);
+  padding: 8px;
+  width: 250px;
 }
-@media(max-width: 720px) {
-  .container {
-    width: 480px;
-  }
-  .banner {
-    padding: 80px;
-  }
-  .banner h1 {
-    font-size: 36px;
-  }
-  .banner p {
-    font-size: 32px;
-  }
+
+.card-container .card-white-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
 }
-@media(max-width: 480px) {
-  .container {
-    width: 320px;
-  }
-  .banner {
-    padding: 60px;
-  }
-  .banner h1 {
-    font-size: 32px;
-  }s
-  .banner p {
-    font-size: 28px;
-  }
+
+.card-container .list-inline {
+  color: #B0B0B0;
+  text-align: right;
+  padding-top: 8px;
+}
+
+.card-container .list-inline li {
+  margin-left: 8px;
+}
+
+.card-container .btn {
+  opacity: 0;
+  transition: .3s;
+}
+
+.card-white:hover .btn {
+  opacity: 1;
+}
+
+.card-user {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.card-user a {
+  color: #4B94BD;
+}
+
+.card-user a:hover {
+  color: #3F7EA3;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
